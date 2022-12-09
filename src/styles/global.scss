@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 :root {
     --background: #FFFFFF;
-    --text: #000000;
+    --title: #1E1F25;
+    --text: #575767;
+
+    --gray100: #EBEBEB;
+    --gray200: #DADADA;
 }
 
 :focus {

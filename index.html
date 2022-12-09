@@ -3,16 +3,50 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="module" defer src="/src/main.ts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
 
-  <title>Vite + TS</title>
+  <script defer src="https://unpkg.com/phosphor-icons"></script>
+
+  <title>Todo List</title>
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <div data-element="app-container" class="list-container">
+      <header>
+        <div>
+          <h1>Tarefas</h1>
+
+          <button data-element="theme-button" class="theme-button-container">
+            <i data-element="theme-icon" class="ph-moon-stars"></i>
+          </button>
+        </div>
+
+        <form data-element="task-form">
+          <label for="task">Adicione uma nova tarefa:</label>
+
+          <div>
+            <input data-element="task-input" type="text" id="task" placeholder="some task...">
+
+            <button>
+              <i class="ph-paper-plane-tilt"></i>
+            </button>
+          </div>
+        </form>
+      </header>
+
+      <div data-element="divider" class="divider"></div>
+
+      <ul data-element="list">
+      </ul>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
